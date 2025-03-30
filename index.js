@@ -64,7 +64,6 @@ client.on("message", async message => {
                         SEND_MESSAGES: false,
                         VIEW_CHANNEL: false
                     });
-                    if (useExtraStaffRole) {
                     if (supportRoleID) {
                         settedParent.updateOverwrite(supportRoleID, {
                             CREATE_INSTANT_INVITE: false,
