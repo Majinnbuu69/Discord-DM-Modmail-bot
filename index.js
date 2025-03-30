@@ -1,7 +1,16 @@
 const discord = require("discord.js")
 const client = new discord.Client()
 const token = process.env.TOKEN;
+const express = require('express')
+const app = express()
 const port = process.env.PORT || 4000;
+app.get('/', (req, res) => {
+  res.send('Im here')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
 
 // Config details
 const config = require("./config.json");
