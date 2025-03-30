@@ -76,7 +76,6 @@ client.on("message", async message => {
                             READ_MESSAGE_HISTORY: true
                         });
                     }
-                    }
 
 
                          var embedParent = new discord.MessageEmbed()
