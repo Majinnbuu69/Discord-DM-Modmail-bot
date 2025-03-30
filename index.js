@@ -1,10 +1,10 @@
 const discord = require("discord.js")
 const client = new discord.Client()
+const token = process.env.TOKEN;
 
 
 // Config details
 const config = require("./config.json");
-var token = config.token;
 var guildID = config.guildID;
 var categoryID = config.categoryID;
 var extraStaffRole = config.useExtraStaffRole;
