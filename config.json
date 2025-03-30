@@ -2,7 +2,7 @@
     "token": "", 
     "guildID": "1190631609850941451",
     "categoryID": "1342553372754055239",
-    "useExtraStaffRole": "false",
+    "useExtraStaffRole": "true",
     "supportRoleID": "1342553389044858911",
     "onlineMessage": "is online",
     "status": {
