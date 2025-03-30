@@ -38,7 +38,7 @@ client.on("ready", async () => {
     })
 
 });
-client.on("message", async message => {
+client.on("messageCreate", async message => {
  
     var existingTicket = false;
     if(message.author.bot) return;
@@ -69,7 +69,7 @@ client.on("message", async message => {
             createdChannel.setParent(categoryID).then(
                 (settedParent) => {
 
-                    settedParent.updateOverwrite(ticketGuild.roles.cache.find(x => x.name === '@everyone'), {
+                    settedParent.permissionOverwrites.edit(ticketGuild.roles.everyone, {
                         SEND_MESSAGES: false,
                         VIEW_CHANNEL: false
                     });
