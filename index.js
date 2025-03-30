@@ -1,7 +1,7 @@
 const discord = require("discord.js")
 const client = new discord.Client()
 const token = process.env.TOKEN;
-
+const port = process.env.PORT || 4000;
 
 // Config details
 const config = require("./config.json");
